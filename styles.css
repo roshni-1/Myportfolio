@@ -1,43 +1,63 @@
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-}
+/* styles.css */
 
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
+/* ... (existing styles) */
 
-nav {
-    background-color: #444;
-    padding: 10px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+#chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
-nav li {
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
+#chat-icon {
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #4caf50;
     color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+#chatbox {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 250px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#chat-title {
     font-weight: bold;
-    font-size: 16px;
+    margin-bottom: 10px;
 }
 
-section {
-    padding: 40px;
+#chat-messages {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 10px;
 }
 
-section h2 {
-    color: #333;
+#user-input {
+    padding: 8px;
+    margin-right: 10px;
+    flex: 1;
+}
+
+#chatbox button {
+    padding: 8px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
